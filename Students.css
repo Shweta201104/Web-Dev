@@ -1,0 +1,108 @@
+/* Global Styles */
+students {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style each student */
+student {
+    display: block;
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #0288d1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Student */
+student:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Style elements inside student */
+id, name, age, department, email {
+    display: block;
+    margin: 8px 0;
+    color: #01579b;
+    font-size: 1.1em;
+}
+
+/* Bold Title Styling */
+id {
+    font-weight: bold;
+    color: #0288d1;
+}
+
+/* Student's Name Styling */
+name {
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #0277bd;
+    text-transform: capitalize;
+}
+
+/* Age Styling */
+age {
+    color: #8e8e8e;
+    font-size: 1em;
+    font-style: italic;
+}
+
+/* Department Styling */
+department {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+/* Email Styling */
+email {
+    color: #d32f2f;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover Effect for Email */
+email:hover {
+    color: #b71c1c;
+    text-decoration: underline;
+}
+
+/* Styling for Links inside Email */
+email a {
+    color: #01579b;
+    text-decoration: none;
+}
+
+/* Add Hover effect to student on hover */
+student:hover id,
+student:hover name,
+student:hover age,
+student:hover department,
+student:hover email {
+    color: #0288d1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    students {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    student {
+        padding: 15px;
+    }
+
+    id, name, age, department, email {
+        font-size: 1em;
+    }
+}

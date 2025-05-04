@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Students.css"?>
+<students>
+    <student>
+        <id>ID : 101</id>
+        <name>Name : Radha Deshmukh</name>
+        <age>Age : 20</age>
+        <department>Department:Computer Science</department>
+        <email>E-mail : radhadeshmukh@gmail.com</email>
+    </student>
+    <student>
+        <id>ID : 102</id>
+        <name>Name : Raj Patil</name>
+        <age>Age : 21</age>
+        <department>Department: Information Technology</department>
+        <email>E-mail : rajpatil@gmail.com</email>
+    </student>
+    <student>
+        <id>ID : 145</id>
+        <name>Name : Smita Yadav</name>
+        <age>Age : 44</age>
+        <department>Department: Electical</department>
+        <email>E-mail : smitayadav@gmail.com</email>
+    </student>
+    <student>
+        <id>ID : 178</id>
+        <name>Name : Om Khot</name>
+        <age>Age : 21</age>
+        <department>Department: Civil</department>
+        <email>E-mail : omkhot@gmail.com</email>
+    </student>
+</students>

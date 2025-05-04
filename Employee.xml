@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="employee.css"?>
+<employees>
+    <employee>
+        <id>ID: 5001</id>
+        <name>Name: Michael Scott</name>
+        <position>Position: Manager</position>
+        <department>Department: Sales</department>
+        <salary>Salary: 75000</salary>
+    </employee>
+    <employee>
+        <id>ID: 5002</id>
+        <name>Name: Pam Beesly</name>
+        <position>Position: Receptionist</position>
+        <department>Department: Administration</department>
+        <salary>Salary: 45000</salary>
+    </employee>
+    <employee>
+        <id>ID: 5003</id>
+        <name>Name: Jim Halpert</name>
+        <position>Position: Sales Executive</position>
+        <department>Department: Sales</department>
+        <salary>Salary: 60000</salary>
+    </employee>
+    <employee>
+        <id>ID: 5004</id>
+        <name>Name: Dwight Schrute</name>
+        <position>Position: Assistant to the Regional Manager</position>
+        <department>Department: Sales</department>
+        <salary>Salary: 58000</salary>
+    </employee>
+</employees>
