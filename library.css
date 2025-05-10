@@ -1,0 +1,109 @@
+
+library {
+  display: block;
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+book {
+  display: block;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #4caf50;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+book:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+book > * {
+  display: block;
+  margin: 8px 0;
+  color: #333;
+}
+
+
+title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3f51b5;
+  text-transform: uppercase;
+}
+
+
+author {
+  color: #757575;
+  font-size: 1.1em;
+}
+
+published_year {
+  font-style: italic;
+  color: #8e8e8e;
+  font-size: 1em;
+}
+
+
+available_copies {
+  color: #388e3c;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
+book:hover title,
+book:hover author,
+book:hover published_year,
+book:hover available_copies {
+  color: #4caf50;
+  transition: color 0.3s ease;
+}
+
+
+book:hover::after {
+  content: "Click for more details...";
+  font-size: 0.9em;
+  color: #ffffff;
+  background-color: #3f51b5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+}
+
+
+@media (max-width: 600px) {
+  library {
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  book {
+      padding: 15px;
+  }
+
+  title {
+      font-size: 1.2em;
+  }
+
+  author,
+  published_year,
+  available_copies {
+      font-size: 1em;
+  }
+}
