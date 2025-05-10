@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Registration</title>
+</head>
+<body>
+
+  <h2 align="center">Employee Registration</h2>
+  <br>
+
+  <form action="" method="get">
+    <table align="center" border="1" cellpadding="10" cellspacing="0">
+      <tr>
+        <td>Full Name</td>
+        <td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
+      </tr>
+
+      <tr>
+        <td>Email <br><small>(must be a Gmail address)</small></td>
+        <td><input type="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" placeholder="example@gmail.com" required></td>
+      </tr>
+
+      <tr>
+        <td>Phone Number <br><small>(10 digits only)</small></td>
+        <td><input type="tel" name="phone" pattern="[0-9]{10}" placeholder="e.g. 9876543210" required></td>
+      </tr>
+
+      <tr>
+        <td>Department</td>
+        <td>
+          <select name="department" required>
+            <option value="">-- Select Department --</option>
+            <option value="HR">Human Resources</option>
+            <option value="IT">IT</option>
+            <option value="Finance">Finance</option>
+            <option value="Marketing">Marketing</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="Male" required> Male
+          <input type="radio" name="gender" value="Female"> Female
+          <input type="radio" name="gender" value="Other"> Other
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Register</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
